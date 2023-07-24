@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMPLE CALCULATOR</title>
+</head>
+<body style=" *margin: 0px; *padding:0px; " >
+    
+   
+  <div style="text-align:center; margin-top: 25%;" >
+
+    <H1>A SIMPLE CALCULATOR </H1>
+   <SPan style="color:purple ">by Jama'a Habakkuk C. </SPan> <br> <br>
+
+<input type="text" placeholder="first value" id="input1" style=" text-align: center; padding: 5px; border: none; background-color: darkslategray; width: 100px; color: white; border-radius: 15px ; "> <br> <br>
+ <input type="text" placeholder="second value" id="input2" style=" text-align: center;  padding: 5px; border: none; width: 100px; background-color: darkslategray; color: whitesmoke; border-radius: 15px;">
+
+ <br> <br>
+
+<button id="add" style=" border-radius: 5px; padding: 3px; border: none; background-color: darkmagenta;" onclick="add()">ADD</button>
+<button id="mul" style="  border-radius: 5px; padding: 3px; border: none; background-color: darkmagenta;"  onclick="multiply()">MULTIPLY</button>
+<button id="div" style=" margin-bottom:3px;  border-radius: 5px; padding: 3px; border: none; background-color: darkmagenta;" onclick="divide()">DIVIDE</button>
+<br>
+<button id="sub"style=" border-radius: 5px; padding: 3px; border: none; background-color: darkmagenta;"  onclick="substract()">SUBSTRACT</button>
+  <br> <br>
+<span id="result" style=" border-radius: 5px; padding: 3px; border: none; background-color: black; color: whitesmoke; ">ANSWER: </span>
+
+
+<br> <br> <br> <br> <br>
+</div>
+
+
+
+<script>
+        let few = document.getElementById ("result")
+
+let firstNo = document.getElementById("input1")
+let secondNo = document.getElementById("input2")
+
+  
+function add() {
+ 
+  let total =   parseInt(firstNo.value) + parseInt(secondNo.value)
+
+ few.innerText = "ANSWER: " + total
+}  
+
+
+
+function multiply() {
+ 
+ let total =  parseInt(firstNo.value) * parseInt(secondNo.value)
+ few.innerText = "ANSWER: " +  total
+ 
+}
+
+function divide() {
+ 
+ let  total =  parseInt(firstNo.value)  / parseInt(secondNo.value)
+ 
+ few.innerText = "ANSWER: " +  total 
+ 
+}
+
+function substract() {
+ 
+ let total =   parseInt(firstNo.value) - parseInt(secondNo.value)
+ 
+few.innerText = "ANSWER: " +  total
+ 
+}
+
+     
+</script>
+   
+
+</body>
+</html>
